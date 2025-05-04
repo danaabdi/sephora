@@ -79,5 +79,6 @@ The dataset was collected in **March 2023** using a Python scraper and includes:
 ## 👩‍💻 Author
 
 Made with 💜 by [@danaabdi](https://github.com/danaabdi)  
+tableau link (https://public.tableau.com/app/profile/dana.abdirakhym6361/viz/sephora_17462112384150/Sheet10)
 Feel free to ⭐ the repo or open an issue for collaboration ideas!
 
