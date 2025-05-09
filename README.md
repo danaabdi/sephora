@@ -1,80 +1,54 @@
-# 💄 Sephora Skincare Products & Reviews Analysis
 
-This project analyzes a large-scale dataset of **Sephora skincare products and user reviews** to uncover insights into product performance, customer sentiment, brand popularity, and pricing trends. It combines **data cleaning**, **exploratory analysis**, **text mining**, and **visual storytelling** to help both consumers and businesses understand what makes a product successful.
+# 📦 Sephora Product Returns Analytics
 
----
-
-## 📦 Dataset Overview
-
-The dataset was collected in **March 2023** using a Python scraper and includes:
-
-### 🛍️ Product Information
-- 8,000+ beauty and skincare products from Sephora
-- Fields include: product name, brand, price, ingredients, rating, product type
-
-### 💬 User Reviews
-- ~1 million reviews for 2,000+ skincare items
-- Each review includes: user appearance (e.g. skin type), rating, title, text
+This project analyzes Sephora's product return operations with the goal of improving customer satisfaction, supplier evaluation, and inventory efficiency. Inspired by my own frequent Sephora purchases, I turned this business problem into a data warehouse and BI capstone project.
 
 ---
 
-## 🔍 Key Features
+## 🎯 Objective
 
-### 📊 Exploratory Data Analysis (EDA)
-- Analyze product categories, brand popularity, and price trends
-- Understand ingredient frequency and pricing correlations
-
-### 😄 Sentiment Analysis
-- Classify review sentiment (positive, neutral, negative)
-- Identify brands and products with the strongest/weakest customer feedback
-
-### ✍️ Text Mining
-- Extract most common words and themes from user reviews
-- Identify common complaints and compliments
-
-### 🤖 Recommender System (Planned)
-- Recommend skincare products based on user preferences and review history
-
-### 📈 Data Visualization
-- Bar charts, histograms, and word clouds for quick insights
-- Interactive dashboards with Tableau / Looker Studio (coming soon)
+To help Sephora optimize its return policy by:
+- Tracking and visualizing return trends by product, tier, and channel
+- Evaluating supplier quality and contract risk
+- Identifying resalable vs. damaged products
+- Supporting better inventory restocking decisions
 
 ---
 
-## 🧪 Example Visualization
+## 🛠 Tools & Technologies
 
-![Brand Popularity](assets/brand_popularity_barplot.png)
-
-> 📊 Bar chart of the most-reviewed skincare brands on Sephora
-
----
-
-## 💻 Technologies Used
-
-- `pandas`, `numpy`, `matplotlib`, `seaborn` — data wrangling & plotting  
-- `NLTK` / `TextBlob` — sentiment analysis  
-- `scikit-learn` — future ML modeling  
-- `Tableau` / `Looker Studio` — dashboard visualization  
-- `Python scraper` (requests + BeautifulSoup) — data collection  
+- SQL (for KPI queries)
+- SAP Data Warehouse Cloud (DWC) for dimensional modeling
+- Tableau for dashboard visualization
+- ETL pipeline design for data cleansing and loading
 
 ---
 
-## 🚀 How to Run
+## 📊 Key KPIs & Insights
 
-1. Clone this repository  
-2. Install requirements: `pip install -r requirements.txt`  
-3. Run notebooks in `/notebooks/` for EDA and sentiment analysis  
-4. Visualizations are saved in `/assets/`
+| Focus Area             | Metric Example                                | Target                     |
+|------------------------|-----------------------------------------------|----------------------------|
+| Returns                | % Returned Products by Tier + Channel         | < 20% of total sales       |
+| Product Condition      | Resalable % of Returns                        | ≥ 80%                      |
+| Product Condition      | Avg. Damage Score                             | ≤ 2.0                      |
+| Inventory Management   | Restock % of Returned Resalable Products      | ≥ 70%                      |
+| Customer Behavior      | Sales by Membership Tier                      | Higher for premium members |
+| Supplier Evaluation    | Return Quantity by Supplier                   | Flag top 5 for review      |
+
+---
+
+## 📈 Dashboard Highlights
+
+- Return distribution by membership tier and method (in-store vs. online)
+- Top 5 most-returned suppliers
+- Inventory levels and restocks by quarter
+- Resalable vs. damaged product analysis
+- Sales performance by product type and loyalty level
 
 ---
 
-## 🧠 Project Ideas
+## 📁 Project Structure
 
-- Build a **product rating predictor** using review sentiment and ingredients
-- Create a **customer profile clustering** based on preferences
-- Deploy a **product recommender API** using Flask or Streamlit
-
----
 
 ## 👩‍💻 Author
 
